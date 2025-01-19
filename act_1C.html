@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      color: gray;
+    }
+    ::placeholder {
+      color: gray;
+    }
+    .signin {
+      padding: 0.5em;
+      width: 20em;
+    }
+    .img-container {
+      width: 2em;
+      border: 0.1em solid;
+      padding: 0.5em;
+      background-color: #029398;
+    }
+    .input-container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 0.75em;
+    }
+    .signup {
+      margin: 1em;
+      margin-left: 0;
+      padding: 0.5em;
+      width: 8em;
+      color: white;
+      background-color: #088f8f;
+      border: none;
+      border-radius: 0.2em;
+      height: 2.5em;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    label {
+      font-size: 0.75em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: gray;
+    }
+    label a {
+      color: #088f8f;
+    }
+    hr {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <p>Please fill in the form to create an account</p>
+    <hr />
+    <form action="act_1C_login.html">
+      <div class="input-container">
+        <img
+          class="img-container"
+          src="https://icons.veryicon.com/png/o/education-technology/education-cloud/username-1.png"
+        />
+        <input class="signin" type="text" placeholder="Username" /><br />
+      </div>
+      <div class="input-container">
+        <img
+          class="img-container"
+          src="https://cdn-icons-png.flaticon.com/512/46/46951.png"
+        />
+        <input class="signin" type="text" placeholder="Email Address" /><br />
+      </div>
+
+      <div class="input-container">
+        <img
+          class="img-container"
+          src="https://icons.veryicon.com/png/o/miscellaneous/face-monochrome-icon/password-76.png"
+        />
+        <input type="password" class="signin" placeholder="Password" /><br />
+      </div>
+
+      <div class="input-container">
+        <img
+          class="img-container"
+          src="https://icons.veryicon.com/png/o/miscellaneous/face-monochrome-icon/password-76.png"
+        />
+        <input
+          type="password"
+          class="signin"
+          placeholder="Confirm Password"
+        /><br />
+      </div>
+      <input
+        type="checkbox"
+        id="TnC"
+        name="TnC"
+        value="Sell data at black market"
+      />
+      <label for="TnC">
+        Accept the <a>Terms of Use</a> & <a>Privacy Policy</a></label
+      ><br />
+      <input type="submit" value="Sign up" id="signup" class="signup" />
+    </form>
+  </body>
+</html>

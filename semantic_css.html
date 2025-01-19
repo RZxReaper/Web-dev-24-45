@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="semantic.css">
+  </head>
+  <!--<style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+    header {
+      height: fit-content;
+      width: 100%;
+      background-image: url('https://i.pinimg.com/originals/21/e2/e7/21e2e73eb9a9984e3b407328f65f5e5b.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #d6ffb5;
+      font-size: 2em;
+      margin: 0;
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    body {
+      margin: 0;
+      background-color: #084724;
+      color: rgb(255, 255, 255);
+    }
+    .htext {
+      height: fit-content;
+      width: 12em;
+      padding: 1em;
+      font-size: 2em;
+      text-shadow: 0.1em 0.1em rgba(0, 82, 43, 0.758);
+      background-image: linear-gradient(
+        to right,
+        rgba(1, 55, 1, 0.791),
+        rgba(0, 255, 119, 0)
+      );
+      letter-spacing: 0.15em;
+    }
+    nav {
+      background-color: #222b29;
+      padding-left: 0;
+      text-align: left;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      display: inline-block;
+      font-size: 1.25rem;
+      width: fit-content;
+      height: fit-content;
+      text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+      text-shadow: none;
+      padding: 1em;
+      margin: 0;
+      color: #acd1af;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration-color: greenyellow;
+      color: greenyellow;
+      text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.61);
+    }
+    article {
+      background-color: #acd1af;
+      padding: 2em;
+      color: #315e26;
+    }
+    h1 {
+      text-decoration: underline;
+      font-size: 2rem;
+    }
+    aside {
+      text-align: center;
+      line-height: 2em;
+    }
+    .sticky_box {
+      position: fixed;
+      float: right;
+      right: 0;
+      top: 60%;
+      backdrop-filter: blur(0.1em);
+      width: 2em;
+      height: 1em;
+      overflow: hidden;
+      color: rgba(0, 0, 0, 0);
+      background-color: #222b29d6;
+      padding: 1em;
+      border: none;
+      border-radius: 0.5em;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      transition: 500ms;
+    }
+    .sticky_box:hover {
+      width: 10em;
+      height: 10em;
+      background-color: #222b298a;
+      border: solid 0.2em #222b29;
+      border-right: none;
+      color: #b1dd9e;
+    }
+    section{
+      margin-bottom: 5rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-size: 1.25em;
+      line-height: 1.5em;
+    }
+    li{
+      list-style: none;
+      padding: 0.5em;
+    }
+    .icon{
+       width: 1em;
+       height: fit-content;
+       margin-right: 0.5em;
+    }
+    aside a {
+      text-decoration: underline;
+      text-decoration-color: rgba(0, 0, 0, 0);
+      display: block;
+      width: fit-content;
+      color: #b1dd9e;
+      transition: 500ms;
+    }
+    aside a:hover {
+      text-decoration: underline;
+      color: greenyellow;
+    }
+    iframe{
+      display: block;
+      width: 28em;
+      height: 15.75em;
+      margin: 2em;
+      margin-left: 0em;
+      border-radius: 1em;
+    }
+    li a{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: underline 0.1em rgba(0,0,0,0);
+      text-underline-offset: 0.25em;
+      color: #084724;
+      transition: 100ms ease-out;
+      font-size: 1.5rem;
+    }
+    li a:hover{
+      text-decoration: underline 0.1em;
+      text-underline-offset: 0.25em;
+    }
+footer {
+  background-color: #222b29;
+  color: #e4f8ba;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-us {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+.contact-us h2 {  
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.contact-info a {
+  font-size: 1.2em;
+  margin-left: 0.1em;
+  color: #9acd32;
+  text-decoration: underline rgba(0, 0, 0, 0);
+  transition: 300ms;
+}
+
+.contact-info a:hover{
+  text-decoration-color: greenyellow;
+  color: greenyellow;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form label {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 1em;
+  padding: 1em;
+  border: 0.2em solid #9acd32;
+  border-radius: 0.2em;
+  transition: background-color 300ms;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #e4f8ba;
+  outline: none;
+  caret-color: #222b29;
+}
+
+.contact-form button {
+  padding: 1em;
+  width: 12em;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #9acd32;
+  color: #084724;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.contact-form button:hover {
+  color: #e4f8ba;
+  background-color: #084724;
+}-->
+
+  </style>
+  <body>
+    <header><div class="htext">Acceptus</div></header>
+    <nav>
+      <a href="#Home1">Home</a> <div> | </div>
+      <a href="https://www.google.co.in/">Article</a> <div> | </div>
+      <a href="https://www.google.co.in/">Section</a> <div> | </div>
+      <a href="#contact-form">Contact Us</a>
+    </nav>
+      <article id="Home1">
+        <section>
+          <h1>Home</h1>
+
+          The theme of this website is nature-inspired, characterized by earthy green tones and a serene waterfall-themed background image in the header.<br><br>The design emphasizes simplicity and accessibility, with a clean and organized layout that uses semantic HTML elements like "Home," "Article," "Section," and "Footer" to structure the content clearly. The navigation bar is intuitive and user-friendly, reinforcing the website's focus on clarity and usability.<br><br> The overall aesthetic evokes a sense of calmness and connection to nature.
+        </section>
+        <section>
+          <h1>Navigation List</h1>
+          <ul>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5077/5077571.png" class="icon"><a href="">1A</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5077/5077571.png" class="icon"><a href="">1B</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5077/5077571.png" class="icon"><a href="">1C</a></li>
+          </ul>
+        </section>
+        <section>
+          <h1>Blog</h1>
+          Here's a video on how to host your websites on github pages:
+          <iframe src="https://www.youtube.com/embed/NGBAQ-7m_8M?si=MzJa64ffxrgO4eCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+      </article>
+      <aside class="sticky_box">
+        Quick Links :
+        <a href="https://github.com/RZxReaper/Web-dev-24-45/" target="_blank">Github</a>
+        <a href="https://www.google.co.in/" target="_blank">Google</a>
+        <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>
+        <a href="https://moovit.vit.ac.in/" target="_blank">Moodle</a>
+      </aside>
+    </div>
+    <footer>
+      <div class="contact-us" id="contact-form">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us through any of the following methods:</p>
+        <ul class="contact-info">
+          <li><strong>Email :</strong> <a href="mailto:info@acceptus.com">info@acceptus.com</a></li>
+          <li><strong>Phone :</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li><strong>Address :</strong> 123 Nature Lane, Greenfield, Earth</li>
+        </ul>
+        <form class="contact-form" action="/submit-contact" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </footer>
+    
+  </body>
+</html>
