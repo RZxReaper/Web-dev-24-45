@@ -26,13 +26,14 @@ body {
   padding: 1em;
   font-size: 2em;
   text-shadow: 0.1em 0.1em rgba(0, 82, 43, 0.758);
-
+  max-width: 50vw;
   background-image: linear-gradient(
     to right,
     rgba(1, 55, 1, 0.791),
     rgba(0, 255, 119, 0)
   );
   letter-spacing: 0.15em;
+  word-wrap: break-word;
 }
 nav {
   display: flex;
@@ -43,6 +44,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   position: sticky;
   top: 0;
+  flex-wrap: wrap;
 }
 nav a {
   display: inline-block;
@@ -78,6 +80,8 @@ article {
 h1 {
   text-decoration: underline;
   font-size: 2rem;
+  max-width: 50vw;
+  word-wrap: break-word;
 }
 aside {
   text-align: center;
